@@ -1,0 +1,8 @@
+{
+  "name": "AppflowCI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "id": "c46af4ba",
+  "type": "react"
+}
