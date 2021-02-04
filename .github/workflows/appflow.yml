@@ -28,7 +28,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Build iOS with Appflow
-        uses: ionic-team/appflow-build@v1
+        uses: ionic-team/appflow-build@fix-use-head-ref-for-prs
         with:
           token: ${{ secrets.IONIC_TOKEN }}
           app-id: c46af4ba
@@ -48,7 +48,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Build Android with Appflow
-        uses: ionic-team/appflow-build@v1
+        uses: ionic-team/appflow-build@fix-use-head-ref-for-prs
         with:
           token: ${{ secrets.IONIC_TOKEN }}
           app-id: c46af4ba
@@ -66,7 +66,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Build Live Update with Appflow
-        uses: ionic-team/appflow-build@v1
+        uses: ionic-team/appflow-build@fix-use-head-ref-for-prs
         with:
           token: ${{ secrets.IONIC_TOKEN }}
           app-id: c46af4ba
