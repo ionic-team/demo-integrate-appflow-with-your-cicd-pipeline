@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - 'hotfix/**'
+  pull_request:
+    branches: '**'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -20,6 +22,5 @@ jobs:
         uses: ionic-team/appflow-build@fix-use-head-ref-for-prs
         with:
           token: ${{ secrets.IONIC_TOKEN }}
-          app-id: c46af4ba
+          app-id: 4d301144
           platform: Web
-          environment: GitHub
